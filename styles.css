@@ -47,8 +47,6 @@ main {
 .logo {
   width: 92px;
   height: 92px;
-  border: 1px solid var(--coral);
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,24 +56,11 @@ main {
   animation: logoIn 0.8s cubic-bezier(.22,.61,.36,1) 0.1s forwards;
 }
 
-.logo::before {
-  content: "";
-  position: absolute;
-  inset: 7px;
-  border: 1px solid rgba(255,109,101,0.25);
-  border-radius: 50%;
-}
-
-.logo-text {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 39px;
-  font-weight: 500;
-  font-style: italic;
-  color: var(--coral);
-  letter-spacing: -4px;
-  line-height: 1;
-  position: relative;
-  z-index: 2;
+.logo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
 }
 
 @keyframes logoIn {
