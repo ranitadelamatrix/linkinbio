@@ -128,6 +128,86 @@ main {
   transform: translateY(-1px);
 }
 
+.policies {
+  width: 100%;
+  padding: 17px 18px 16px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: rgba(255,255,255,.32);
+  text-align: left;
+  opacity: 0;
+  animation: fadeUp .7s ease-out .75s forwards;
+}
+
+.policies h2 {
+  color: var(--ink);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.policies-summary,
+.policies-content p {
+  color: #3f3a35;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.policies-summary {
+  margin-top: 7px;
+}
+
+.policies strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.policies-content {
+  padding-top: 14px;
+}
+
+.policies-content h3 {
+  margin-top: 12px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.policies-content h3:first-child {
+  margin-top: 0;
+}
+
+.continue-btn {
+  width: 100%;
+  min-height: 52px;
+  margin-top: 19px;
+  border: 1px solid var(--coral);
+  border-radius: 7px;
+  background: var(--coral);
+  color: var(--white);
+  cursor: pointer;
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  transition: transform .25s ease, background .25s ease, box-shadow .25s ease;
+}
+
+.continue-btn:hover {
+  background: var(--coral-dark);
+  box-shadow: 0 9px 22px rgba(255,109,101,.22);
+  transform: translateY(-2px);
+}
+
+.continue-btn:active {
+  transform: scale(.98);
+}
+
+.links[hidden] {
+  display: none;
+}
+
 .links {
   width: 100%;
   display: flex;
